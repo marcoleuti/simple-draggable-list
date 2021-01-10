@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="https://picsum.photos/200/200" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/simple-draggable-list.js"></script>
+
+    <div class="container"><div class="row">
+      <div class="col-md-6">
+        <div id="sdl-wrap">
+            <div class="sdl-list" id = 'reg'>
+                <div>Mail Package</div>
+                <div class="sdl-draggable"><img class="sdl-draggable-icon" src="assets/drag-reorder-128px.png" alt=""></div>
+            </div>
+            <div class="sdl-list" id = 'reg'>
+                <div>Meeting w/You Know Who</div>
+                <div class="sdl-draggable"><img class="sdl-draggable-icon" src="assets/drag-reorder-128px.png" alt=""></div>
+            </div>
+            <div class="sdl-list" id = 'imp'>
+                <div>Call Mom - Birthday!</div>
+                <div class="sdl-draggable"><img class="sdl-draggable-icon" src="assets/drag-reorder-128px.png" alt=""></div>
+            </div>
+            <div class="sdl-list" id='reg'>
+                <div>Buy Milk, Bread & Cereal</div>
+                <div class="sdl-draggable"><img class="sdl-draggable-icon" src="assets/drag-reorder-128px.png" alt=""></div>
+            </div>
+            <div class="sdl-list" id = 'reg'>
+                <div>Make Bank Deposit</div>
+                <div class="sdl-draggable"><img class="sdl-draggable-icon" src="assets/drag-reorder-128px.png" alt=""></div>
+            </div>
+            <div class="sdl-list" id = 'imp'>
+                <div>Wash Football Uniform</div>
+                <div class="sdl-draggable"><img class="sdl-draggable-icon" src="assets/drag-reorder-128px.png" alt=""></div>
+            </div>
+            <div class="sdl-list" id = 'reg'>
+                <div>Send Report To John</div>
+                <div class="sdl-draggable"><img class="sdl-draggable-icon" src="assets/drag-reorder-128px.png" alt=""></div>
+            </div>
+            <div class="sdl-list" id = 'imp'>
+                <div>Submit Vacation Time</div>
+                <div class="sdl-draggable"><img class="sdl-draggable-icon" src="assets/drag-reorder-128px.png" alt=""></div>
+            </div>
+        </div>
+      </div>
+    </div></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", load, false);
+
+      function load() {
+        var sort = new Sort("sdl-wrap");
+        sort.init();
+      }
+    </script>
+  </div>
+
+</body>
+</html>
